@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard OKR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Objetivos y resultados clave</h1>
+      <p id="periodo"></p>
+    </div>
+    <button id="reset" type="button">Restablecer valores</button>
+  </header>
+
+  <main>
+    <section id="resumen" aria-label="Resumen general"></section>
+
+    <div class="filtros">
+      <label>Objetivo <select id="f-obj"></select></label>
+      <div id="f-estado" role="group" aria-label="Filtrar por estado"></div>
+    </div>
+
+    <div class="cols">
+      <section id="objetivos" aria-label="Objetivos y resultados clave"></section>
+      <aside id="mejora" aria-label="Áreas de mejora"></aside>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
